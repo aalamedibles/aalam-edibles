@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --cream: #f4ebc8;
+  --orange: #ff9800;
+  --orange-dark: #e98700;
+  --black: #111111;
+  --white: #fffdf5;
+  --border: rgba(17, 17, 17, 0.10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--black);
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.page {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: 28px 20px 22px;
+}
+
+.hero {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 70px;
+}
+
+.logo-wrap {
+  width: min(100%, 560px);
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.intro {
+  margin: 8px 0 24px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.links {
+  width: min(100%, 520px);
+  display: grid;
+  gap: 14px;
+}
+
+.link-button {
+  min-height: 58px;
+  padding: 15px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.10);
+  background: #ffffff;
+}
+
+.link-button:active {
+  transform: translateY(0);
+}
+
+.icon {
+  color: var(--orange-dark);
+  font-size: 23px;
+  line-height: 1;
+}
+
+.products {
+  padding: 52px 0 70px;
+  text-align: center;
+}
+
+.products h2 {
+  margin: 0 0 18px;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+.coming-soon {
+  border: 1px dashed rgba(17, 17, 17, 0.22);
+  border-radius: 18px;
+  padding: 30px 20px;
+  background: rgba(255, 253, 245, 0.35);
+}
+
+.coming-soon p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.72;
+}
+
+footer {
+  text-align: center;
+  padding: 22px 0 8px;
+  font-size: 13px;
+  opacity: 0.65;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.tagline {
+  letter-spacing: 2px;
+}
+
+@media (max-width: 520px) {
+  .page {
+    padding: 14px 16px 18px;
+  }
+
+ .hero {
+  min-height: auto;
+  padding: 30px 0 50px;
+}
+
+  .logo-wrap {
+    width: 100%;
+  }
+
+  .intro {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  .link-button {
+    min-height: 56px;
+    font-size: 15px;
+    border-radius: 14px;
+  }
+
+  .products {
+    padding-top: 34px;
+  }
+
+  .products h2 {
+    font-size: 24px;
+  }
+}
